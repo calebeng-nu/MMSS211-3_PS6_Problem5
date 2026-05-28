@@ -1,0 +1,149 @@
+============================================================
+Problem 5: Disagreement Spectrum in the Class Data
+============================================================
+
+Data URL:
+https://bengolub-economics.github.io/undergrad_networks_2026/shareable/info_professional.csv
+
+Using local file: info_professional.csv
+
+Original weighted matrix size: 33 by 33
+Total positive entries in original matrix: 256
+
+============================================================
+Part 5(a): Strongly Connected Components and W
+============================================================
+
+Number of strongly connected components: 2
+Size of largest strongly connected component: 32
+Original number of nodes: 33
+
+All component sizes:
+[32 1]
+
+Indices in largest component:
+[1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 24 25 26 27 28 29 30 31 32 33]
+
+Indices not in largest component:
+23
+
+Constructed DeGroot matrix W of size 32 by 32.
+Minimum row sum of W: 1.000000000000
+Maximum row sum of W: 1.000000000000
+
+============================================================
+Part 5(b): Second Eigenvalue and Right-Hand Eigenvector
+============================================================
+
+Largest eigenvalue lambda_1:
+  1.000000000000 + 0.000000000000i
+
+Second-largest-by-absolute-value eigenvalue lambda_2:
+  0.712690018159 + 0.000000000000i
+
+Check Euclidean norm of sigma: 1.000000000000
+
+Sigma entries, using original student indices:
+OriginalIndex 1: 0.391652570204
+OriginalIndex 2: 0.230525516286
+OriginalIndex 3: 0.179003072889
+OriginalIndex 4: -0.096223852960
+OriginalIndex 5: 0.130368245582
+OriginalIndex 6: 0.234618482849
+OriginalIndex 7: 0.115858099973
+OriginalIndex 8: 0.068190951603
+OriginalIndex 9: 0.125856660986
+OriginalIndex 10: -0.048513287902
+OriginalIndex 11: 0.098554643315
+OriginalIndex 12: 0.090059903153
+OriginalIndex 13: 0.070054435324
+OriginalIndex 14: 0.113030143249
+OriginalIndex 15: -0.057626644273
+OriginalIndex 16: 0.338605740497
+OriginalIndex 17: -0.078558418510
+OriginalIndex 18: 0.132933340240
+OriginalIndex 19: -0.095745025061
+OriginalIndex 20: -0.012029555174
+OriginalIndex 21: -0.019506845283
+OriginalIndex 22: -0.021430265312
+OriginalIndex 24: -0.074935424553
+OriginalIndex 25: 0.231913697487
+OriginalIndex 26: -0.112110676280
+OriginalIndex 27: -0.068236523650
+OriginalIndex 28: -0.100314989649
+OriginalIndex 29: 0.159371642005
+OriginalIndex 30: -0.070374054891
+OriginalIndex 31: 0.490814063986
+OriginalIndex 32: 0.187750418452
+OriginalIndex 33: 0.251381696379
+
+============================================================
+Part 5(c): Sign Split
+============================================================
+
+Left set L = {i : sigma_i < 0}
+Size of L: 13
+[4 10 15 17 19 20 21 22 24 26 27 28 30]
+
+Right set R = {i : sigma_i > 0}
+Size of R: 19
+[1 2 3 5 6 7 8 9 11 12 13 14 16 18 25 29 31 32 33]
+
+No nodes have sigma approximately zero.
+
+============================================================
+Part 5(d): Crossing Weight for the Sign Split
+============================================================
+
+Crossing weight for sign split C(L,R): 5.655140859856
+
+============================================================
+Part 5(d): Random Partition Comparison
+============================================================
+
+Number of random partitions: 10000
+Random partitions use |L| = 13 and |R| = 19.
+
+Sign-split crossing weight: 5.655140859856
+
+Random crossing weight summary:
+  Mean:               15.948228050727
+  Standard deviation: 1.716197362952
+  Minimum:            8.867272335508
+  Median:             16.006346938349
+  10th percentile:    13.711852794490
+  5th percentile:     13.061507017107
+  1st percentile:     11.829890987150
+
+Number of random partitions with crossing weight <= sign split: 0
+Share of random partitions with crossing weight <= sign split: 0.000000
+
+============================================================
+Final Summary
+============================================================
+
+Part (a):
+  Largest SCC size: 32 out of 33 original nodes.
+  Indices not in largest SCC: 23 
+
+Part (b):
+  lambda_2: 0.712690018159 + 0.000000000000i
+  sigma is normalized so that norm(sigma) = 1.000000000000.
+
+Part (c):
+  |L| = 13, |R| = 19
+  L: 4 10 15 17 19 20 21 22 24 26 27 28 30 
+  R: 1 2 3 5 6 7 8 9 11 12 13 14 16 18 25 29 31 32 33 
+
+Part (d):
+  C(L,R) for sign split: 5.655140859856
+  Random mean crossing weight: 15.948228050727
+  Random standard deviation: 1.716197362952
+  Random minimum crossing weight: 8.867272335508
+  Random median crossing weight: 16.006346938349
+  Random 5th percentile crossing weight: 13.061507017107
+  Number random <= sign split: 0 out of 10000
+  Share random <= sign split: 0.000000
+
+Report saved to: problem5_report.txt
+
